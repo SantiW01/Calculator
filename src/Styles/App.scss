@@ -1,0 +1,7 @@
+@use './variables/variables';
+@import "~bootstrap/scss/bootstrap";
+
+#body {
+  background-color: variables.$backgroundColor;
+  width: 13rem;
+}
