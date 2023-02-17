@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculatorBackground {
+  height: 50vh;
+  width: 35vh;
+  background-color: #a7a7a7;
+}
