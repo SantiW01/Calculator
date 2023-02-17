@@ -9,8 +9,28 @@
   height: 100vh;
 }
 
-.calculatorBackground {
+.calculator_background {
   height: 50vh;
   width: 35vh;
   background-color: #a7a7a7;
+}
+
+.calculator_screen {
+  height: 8vh;
+  width: 30vh;
+  margin: 10px 15px 10px 15px;
+  background-color: #020769;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.calculator_screen_number {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: rgb(0, 131, 0);
+  font-size: 40px;
+  width: 100%;
+  padding-right: 10px;
 }
