@@ -34,3 +34,16 @@
   width: 100%;
   padding-right: 10px;
 }
+
+.number_button {
+  display: flex;
+  align-items: flex-start;
+  padding: 25px 45px 0px 0px;
+  flex-flow: row wrap;
+}
+
+.calcualtor_button {
+  flex: 1 0 33%;
+  min-height: 11.4vh;
+  background-color: #a7a7a7;
+}
