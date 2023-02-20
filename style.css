@@ -32,37 +32,7 @@
   width: 100%;
   padding-right: 10px;
 }
-/*.number_button {
-  display: flex;
-  align-items: flex-start;
-  padding: 5px;
-  flex-flow: row wrap;
-  box-sizing: border-box;
-  width: 50%;
-}
-.calcualtor_number_button {
-  flex: 1 0 33%;
-  min-height: 12.4vh;
-  background-color: #a7a7a7;
-}
-.operator_button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  box-sizing: border-box;
-  flex-grow: 1;
-  width: 50%;
-  margin-left: 65%;
-}
-.calcualtor_operator_button {
-  flex: 1 0 25%;
-  margin-right: 30%;
-  width: 100%;
-  
-  background-color: #a7a7a7;
-}
-*/
+
 .number_button {
   display: flex;
   align-items: flex-start;
