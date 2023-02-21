@@ -10,7 +10,7 @@
   height: 100vh;
 }
 .calculator_background {
-  height: 50vh;
+  height: 55vh;
   width: 35vh;
   background-color: #a7a7a7;
 }
@@ -31,6 +31,20 @@
   font-size: 40px;
   width: 100%;
   padding-right: 10px;
+}
+
+.action_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.calculator_cleardelete_button {
+  background-color: #a7a7a7;
+  height: 30px;
+  width: 100%;
 }
 
 .number_button {
@@ -57,7 +71,7 @@
   box-sizing: border-box;
   width: 25%;
   float: left;
-  min-height: 75%;
+  min-height: 68%;
   margin-left: 12%;
 }
 
