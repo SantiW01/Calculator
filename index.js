@@ -81,3 +81,14 @@ document
         break;
     }
   });
+
+document
+  .querySelector(".calculator_clear_button")
+  .addEventListener("click", function () {
+    document.querySelector(".calculator_screen_number").innerHTML = 0;
+    numberArray = [];
+    result = 0;
+    firstNumber = 0;
+    secondNumber = 0;
+    buttonPressed = false;
+  });
