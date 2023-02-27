@@ -40,7 +40,8 @@
   margin: 20px;
 }
 
-.calculator_cleardelete_button {
+.calculator_clear_button,
+.calculator_delete_button {
   background-color: #a7a7a7;
   height: 30px;
   width: 100%;
@@ -74,7 +75,8 @@
   margin-left: 12%;
 }
 
-.calcualtor_operator_button {
+.calcualtor_operator_button,
+.calcualtor_calculate_button {
   flex: 1 0 20%;
   width: 100%;
   background-color: #a7a7a7;
