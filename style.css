@@ -9,7 +9,7 @@
   height: 100vh;
 }
 .calculator_background {
-  height: 55vh;
+  height: 67vh;
   width: 35vh;
   background-color: #a7a7a7;
 }
@@ -60,7 +60,7 @@
 
 .calcualtor_number_button {
   flex: 1 0 33%;
-  min-height: 12.4vh;
+  min-height: 11.39vh;
   background-color: #a7a7a7;
 }
 
@@ -81,4 +81,8 @@
   width: 100%;
   background-color: #a7a7a7;
   border-radius: 5%;
+}
+
+.zero_button {
+  height: 20px;
 }
