@@ -64,12 +64,16 @@ document
     switch (operate) {
       case "+":
         firstNumber = add(firstNumber, secondNumber);
+        secondNumberArray = [];
+        secondNumber;
         break;
       case "-":
         firstNumber = subtract(firstNumber, secondNumber);
+        secondNumberArray = [];
         break;
       case "*":
         firstNumber = multiply(firstNumber, secondNumber);
+        secondNumberArray = [];
         break;
       case "/":
         if (secondNumber == 0) {
@@ -77,8 +81,8 @@ document
             "Error!";
         } else {
           firstNumber = divide(firstNumber, secondNumber);
+          secondNumberArray = [];
         }
-
         break;
       default:
         break;
