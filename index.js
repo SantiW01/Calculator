@@ -61,9 +61,6 @@ document.querySelectorAll(".calcualtor_operator_button").forEach((e) => {
 document
   .querySelector(".calcualtor_calculate_button")
   .addEventListener("click", function () {
-    if (firstNumber == null || secondNumber == null || operate == null) {
-      return "false";
-    }
     switch (operate) {
       case "+":
         firstNumber = add(firstNumber, secondNumber);
@@ -75,7 +72,13 @@ document
         firstNumber = multiply(firstNumber, secondNumber);
         break;
       case "/":
-        firstNumber = divide(firstNumber, secondNumber);
+        if (secondNumber == 0) {
+          document.querySelector(".calculator_screen_number").innerHTML =
+            "Error!";
+        } else {
+          firstNumber = divide(firstNumber, secondNumber);
+        }
+
         break;
       default:
         break;
@@ -86,11 +89,13 @@ document
   .querySelector(".calculator_clear_button")
   .addEventListener("click", function () {
     document.querySelector(".calculator_screen_number").innerHTML = 0;
-    numberArray = [];
+    firstNumberArray = [];
+    secondNumberArray = [];
     result = 0;
     firstNumber = 0;
     secondNumber = 0;
     buttonPressed = false;
+    count = 0;
   });
 
 document
