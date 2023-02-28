@@ -19,7 +19,8 @@ const divide = function divide(firstNumber, secondNumber) {
   return result;
 };
 
-let numberArray = [];
+let firstNumberArray = [];
+let secondNumberArray = [];
 let count = 0;
 let buttonPressed = false;
 let firstNumber = 0;
@@ -31,18 +32,17 @@ document.querySelectorAll(".calcualtor_number_button").forEach((e) => {
   e.addEventListener("click", () => {
     if (buttonPressed == false) {
       if (count < 8) {
-        numberArray.push(e.innerHTML);
-        firstNumber = numberArray.join("");
+        firstNumberArray.push(e.innerHTML);
+        firstNumber = firstNumberArray.join("");
         document.querySelector(".calculator_screen_number").innerHTML =
           firstNumber;
         count++;
       }
     } else {
       count = 0;
-      numberArray = [];
       if (count < 8) {
-        numberArray.push(e.innerHTML);
-        secondNumber = numberArray.join("");
+        secondNumberArray.push(e.innerHTML);
+        secondNumber = secondNumberArray.join("");
         document.querySelector(".calculator_screen_number").innerHTML =
           secondNumber;
         count++;
@@ -91,4 +91,22 @@ document
     firstNumber = 0;
     secondNumber = 0;
     buttonPressed = false;
+  });
+
+document
+  .querySelector(".calculator_delete_button")
+  .addEventListener("click", function () {
+    if (!buttonPressed) {
+      let convertFirstNumberIntoArray = firstNumber.split("");
+      deleteLastNumber = convertFirstNumberIntoArray.pop();
+      firstNumber = convertFirstNumberIntoArray.join("");
+      document.querySelector(".calculator_screen_number").innerHTML =
+        firstNumber;
+    } else {
+      let convertSecondNumberIntoArray = secondNumber.split("");
+      deleteLastNumber = convertSecondNumberIntoArray.pop();
+      secondNumber = convertSecondNumberIntoArray.join("");
+      document.querySelector(".calculator_screen_number").innerHTML =
+        secondNumber;
+    }
   });
